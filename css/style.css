@@ -92,7 +92,7 @@
 :root {
   --text-color: #f5f5f5;
   --text-color-2: #5f5f5f;
-  --background-color: #0a0a0a;
+  --background-color: #000;
   --background-team: #e3e3e3;
 
   --accent-color: #e90085;
@@ -935,8 +935,8 @@ main section:first-of-type {
   flex-direction: row;
   --speed: 20;
   white-space: nowrap;
-  /* --gap: 1rem; */
-  /* gap: var(--gap); */
+  /* --gap: 1rem;
+  gap: var(--gap); */
 }
 
 .marquee {
@@ -949,6 +949,9 @@ main section:first-of-type {
 
 .marquee-content {
   display: inline-flex;
+}
+.marquee-item > h2 {
+  font-size: 30px;
 }
 
 .marquee-item img {
@@ -3041,7 +3044,7 @@ a {
 }
 
 .card-blog:hover {
-  color: var(--accent-color);
+  color: var(--veza-blue);
   transform: translateY(-10px);
 }
 
@@ -3101,7 +3104,7 @@ a {
 .card-service:hover {
   color: var(--text-color);
   transform: translateY(-10px);
-  background-color: var(--accent-color-4);
+  background-color: var(--veza-blue);
 }
 
 .card-404 {
@@ -5205,4 +5208,7 @@ a {
 }
 .main-len > div > div > img {
   width: 12px;
+}
+.logo_car > div {
+  margin-right: 10rem;
 }
