@@ -5158,10 +5158,10 @@ a {
     margin-left: 8rem;
   }
 
-  .marquee-container.first,
+  /* .marquee-container.first,
   .marquee-container.third {
     display: none;
-  }
+  } */
 
   .card-team {
     align-items: center;
@@ -5211,4 +5211,7 @@ a {
 }
 .logo_car > div {
   margin-right: 10rem;
+}
+.blg_div > div{
+  flex: 1;
 }
