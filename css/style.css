@@ -1698,7 +1698,10 @@ a {
 }
 
 .float-img-team {
-  margin-top: -12rem;
+  /* width: 100%; */
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  /* margin-top: -12rem; */
 }
 
 .float-button {
@@ -2746,11 +2749,11 @@ a {
   align-items: center;
   color: var(--background-color);
   background-color: transparent;
-  border: 1px solid var(--background-color);
+  border: 1px solid var(--background-team);
 }
 
 .social-item i {
-  color: var(--background-color);
+  color: var(--background-team);
 }
 
 .social-container.accent .social-item {
@@ -2983,9 +2986,9 @@ a {
 .card-team {
   display: flex;
   flex-direction: column;
-  background-color: var(--background-team);
+  /* background-color: var(--background-team); */
   height: 50%;
-  margin-top: 15rem;
+  margin-top: 5rem;
   transition: all 0.5s ease;
   border-radius: 10px 10px 0 0;
 }
@@ -2996,14 +2999,14 @@ a {
 
 .card-team-detail {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 1.5rem;
   padding: 24px;
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
   border-radius: 10px;
   width: 100%;
   min-height: 50%;
-  align-items: start;
 }
 
 .card-blog {
