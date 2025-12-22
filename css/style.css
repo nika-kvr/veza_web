@@ -83,7 +83,15 @@
 
 @font-face {
   font-family: "Gilroy GEO Heavy";
-  src: url("Gilroy\ GEO\ Heavy.ttf");
+  src: url("Gilroy_GEO_Heavy.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BPG";
+  src: url("bpg_le_studio_02_caps.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -95,7 +103,7 @@
   --background-color: #000;
   --background-team: #e3e3e3;
 
-  --accent-color: #e90085;
+  --accent-color: #e70d85;
   --accent-color-2: #f8c02d;
   --accent-color-3: #f332ba;
   --accent-color-4: #323aed;
@@ -104,7 +112,8 @@
   --color-3: #d2d2d2;
   --color-4: #595fef;
   --font-1: "Gilroy GEO Heavy";
-  --font-2: "Gilroy GEO Heavy", sans-serif;
+  --font-2: "Gilroy GEO Heavy";
+  --font-3: "BPG";
   --veza-blue: #242578;
 }
 
@@ -157,7 +166,7 @@ a {
 
 p {
   font-size: 16px;
-  font-family: var(--font-1);
+  font-family: var(--font-3);
   color: var(--text-color);
 }
 
@@ -578,7 +587,7 @@ main section:first-of-type {
 .navbar-toggler:focus {
   box-shadow: none;
   background-color: transparent;
-  color: var(--accent-color-2);
+  color: var(--accent-color);
 }
 
 .navbar-toggler-icon {
@@ -661,7 +670,7 @@ main section:first-of-type {
 /* Section and Container       */
 /* ---------------------------- */
 .section {
-  padding: 6em 2em 6em 2em;
+  padding: 7em 2em 6em 2em;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -1694,7 +1703,7 @@ a {
 }
 
 .gap-about {
-  gap: 7rem;
+  gap: 36px;
 }
 
 .float-img-team {
@@ -5235,4 +5244,24 @@ a {
 }
 .blg_div > div {
   flex: 1;
+}
+#gridscan {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.two-col > div {
+  flex: 1 1 30%;
+}
+.image-wrapper {
+  max-height: fit-content;
+  border: 22px solid white;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  z-index: inherit;
 }
