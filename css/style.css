@@ -165,9 +165,13 @@ a {
 }
 
 p {
+  margin-bottom: 0;
   font-size: 16px;
   font-family: var(--font-3);
   color: var(--text-color);
+}
+.p_div p {
+  font-size: clamp(12px, 1vw + 5px, 24px);
 }
 
 ul {
@@ -538,9 +542,9 @@ main section:first-of-type {
   display: block;
   margin-top: 0;
 }
-.nav-item > a {
+/* .nav-item > a {
   font-size: 25px;
-}
+} */
 
 .dropdown-menu {
   transition: all 0.3s ease;
@@ -561,7 +565,7 @@ main section:first-of-type {
 
 .nav-link {
   border-bottom: 2px solid transparent;
-  font-size: 18px;
+  font-size: clamp(18px, 1vw + 5px, 30px);
   font-weight: 400;
   font-family: var(--font-1);
   color: var(--text-color);
@@ -4464,11 +4468,34 @@ a {
 .form > input {
   font-size: 1.1rem;
 }
-@media only screen and (max-width: 1024px) {
-  /* ---------------------------- */
-  /* Typography                   */
-  /* ---------------------------- */
 
+/* footer */
+.footer_content {
+  position: relative;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+.veza_white {
+  position: absolute;
+  width: 5vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer_content > div {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.footer_img {
+  height: 35vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer_img {
+    display: none;
+  }
   .cont_us_div {
     align-items: center;
     padding-right: 12px;
@@ -4521,9 +4548,6 @@ a {
     font-style: italic;
   }
 
-  /* ---------------------------- */
-  /* Button and Links Setting     */
-  /* ---------------------------- */
   .btn {
     font-size: 13px;
     width: 100%;
@@ -4538,9 +4562,6 @@ a {
     margin-left: 18rem;
   }
 
-  /* ---------------------------- */
-  /* Header and Navigation Setting  */
-  /* ---------------------------- */
   .logo-container {
     max-width: 200px;
     width: 115px;
@@ -4562,9 +4583,6 @@ a {
     max-width: 100vw;
   }
 
-  /* ---------------------------- */
-  /* Utility Classes              */
-  /* ---------------------------- */
   .p-banner {
     color: var(--text-color);
   }
@@ -5060,7 +5078,14 @@ a {
   }
 }
 
+.margin_t {
+  margin-top: 80px;
+}
+
 @media only screen and (max-width: 599px) {
+  .margin_t {
+    margin-top: 20px;
+  }
   .cont_us_div {
     align-items: center;
     padding-right: 12px;
@@ -5188,11 +5213,6 @@ a {
     margin-left: 8rem;
   }
 
-  /* .marquee-container.first,
-  .marquee-container.third {
-    display: none;
-  } */
-
   .card-team {
     align-items: center;
     margin-top: 15rem;
@@ -5264,4 +5284,17 @@ a {
   height: auto;
   border-radius: 8px;
   z-index: inherit;
+}
+
+/*  */
+
+.blog_rec_cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+}
+.blog_rec_cont > img {
+  width: 30%;
+  aspect-ratio: 1/1;
 }
