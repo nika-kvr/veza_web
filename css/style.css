@@ -5245,14 +5245,14 @@ input[type="checkbox"] {
   display: flex;
   justify-content: flex-end;
 }
+.cont_links_div {
+  padding-top: 26px;
+}
 .cont_png_2 {
   width: clamp(50px, 5vw + 10px, 95px);
   position: absolute;
   bottom: -72px;
   right: -72px;
-}
-.cont_links_div {
-  padding-top: 26px;
 }
 
 @media only screen and (max-width: 599px) {
