@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TWM6K65F");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="image/veza 1_1.png" />
@@ -17,18 +31,25 @@
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TWM6K65F"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Header -->
     <div id="header" class="fixed-top">
       <div style="margin: auto; max-width: 81%">
         <div class="navbar d-xl-flex flex-xl-nowrap">
           <div class="container-fluid navbar-expand-xl">
             <div class="logo-container">
-              <a href="#Logo" class="navbar-brand">
-                <img
-                  src="image/veza_logo.svg"
-                  class="img-fluid w-100"
-                  alt="Logo Reboost"
-                />
+              <a href="index.html" class="navbar-brand">
+                <img src="image/veza_logo.svg" class="img-fluid w-100" alt="" />
               </a>
             </div>
             <button
@@ -36,13 +57,10 @@
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
             >
-              <i class="fa-solid fa-bars-staggered"></i>
+              <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="nav_mobile collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">მთავარი</a>
@@ -80,10 +98,10 @@
       <!-- Blog -->
       <div class="pt-2 pt-md-5">
         <!-- blog title -->
-        <div class="mb-3 mb-md-5">
+        <div class="blod_det_header">
           <h1
             style="
-              font-size: clamp(12px, 2vw + 8px, 48px);
+              font-size: clamp(12px, 2.5vw + 8px, 48px);
               display: flex;
               justify-content: center;
             "
@@ -102,7 +120,11 @@
           style="margin-left: auto; margin-right: auto; width: 80%"
         >
           <p
-            style="text-align: justify; font-size: clamp(12px, 1vw + 8px, 16px)"
+            style="
+              text-align: justify;
+              font-size: clamp(12px, 1vw + 8px, 16px);
+              margin-bottom: 20px;
+            "
           >
             როგორ მუშაობს AI მარკეტინგში <br />
             წლების წინ ნამდვილად ვერავინ იფიქრებდა, ბლექბერებისა და Mp3-ის
@@ -134,7 +156,7 @@
           <img
             class="d-block d-sm-none"
             src="image/veza_ai.jpg"
-            style="width: 100%; aspect-ratio: 1/1"
+            style="width: 100%; aspect-ratio: 1/1; margin-bottom: 20px"
             alt=""
           />
           <div style="display: flex; gap: 19px; flex-wrap: wrap">
@@ -244,7 +266,6 @@
           "
         />
         <div class="footer_content">
-          <img class="veza_white" src="image/veza_white.png" alt="" />
           <div>
             <img class="footer_img" src="image/star_l.png" alt="" />
             <div>
@@ -253,46 +274,92 @@
                 style="
                   font-size: clamp(12px, 2vw + 8px, 48px);
                   font-family: 'BPG';
-                  margin-bottom: 30px;
+                  margin-bottom: 10px;
                 "
               >
                 <span>BRIDGE TO YOUR</span>
-                <span>AUDIENCE</span>
+                <span style="color: var(--accent-color)">AUDIENCE</span>
               </h5>
-              <div class="p_div d-flex gap-4">
-                <p>Home</p>
-                <p>About us</p>
-                <p>service</p>
-                <p>Portfolio</p>
-                <p>Blog</p>
-                <p>Contact</p>
+              <div class="p_div d-flex gap-3 mb-2">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about-us.html" class="nav-link">About us</a>
+                <a href="services.html" class="nav-link">service</a>
+                <a href="portofolio.html" class="nav-link">Portfolio</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact-us.html" class="nav-link">Contact</a>
               </div>
               <div class="p_div d-flex gap-4">
-                <p>Privacy policy</p>
-                <p>Terms&conditions</p>
+                <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                <a href="terms.html" class="nav-link">Terms&Conditions</a>
               </div>
             </div>
           </div>
           <div>
             <div>
-              <h5>დაგვიკავშირდი</h5>
-              <div class="row g-2">
-                <div class="col">
-                  <i
-                    class="p_div fa-solid fa-envelope d-flex align-items-center gap-2"
-                  >
-                  </i>
-                  <p style="font-family: 'BPG'">info@veza.ge</p>
-                </div>
-                <div class="col">
-                  <i
-                    class="fa-solid fa-envelope d-flex align-items-center gap-2"
-                  >
-                    <p style="font-family: 'BPG'">info@veza.ge</p>
-                  </i>
-                  <i class="fa-solid fa-phone d-flex align-items-center gap-2">
-                    <p style="font-family: 'BPG'">+995 599 32 00 34</p>
-                  </i>
+              <div>
+                <h5
+                  class="jc_center d-flex align-items-center gap-2"
+                  style="
+                    font-size: clamp(12px, 2vw + 8px, 48px);
+                    margin-bottom: 1vw;
+                  "
+                >
+                  დაგვიკავშირდი
+                  <img
+                    style="width: 35px; height: 35px"
+                    src="image/pink_star.png"
+                    alt=""
+                  />
+                </h5>
+              </div>
+              <div>
+                <div class="row" style="margin: 0">
+                  <div class="col">
+                    <div class="d-flex align-items-center gap-3">
+                      <i class="p_div fa-solid fa-envelope"> </i>
+                      <a href="mailto:info@veza.ge">
+                        <p style="font-family: 'BPG'">info@veza.ge</p>
+                      </a>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 20px">
+                      <i class="p_div fa-brands fa-facebook-f"> </i>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61576802295198&mibextid=wwXIfr&rdid=crdqpz5aTM2rHC9f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1SxpLiFqhx%2F%3Fmibextid%3DwwXIfr#
+                      "
+                        target="_blank"
+                      >
+                        <p style="font-family: 'BPG'">Veza • ვეზა</p>
+                      </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                      <i class="p_div fa-brands fa-linkedin"> </i>
+                      <a
+                        href="https://www.linkedin.com/company/107649802/admin/dashboard/"
+                        target="_blank"
+                      >
+                        <p style="font-family: 'BPG'">Veza • ვეზა</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex align-items-center" style="gap: 13px">
+                      <i class="p_div fa-solid fa-phone"> </i>
+                      <a href="tel:+995599320034">
+                        <p style="font-family: 'BPG'" class="cont_number">
+                          (+995) 599 32 00 34
+                        </p>
+                      </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                      <i class="p_div fa-brands fa-instagram"> </i>
+                      <a
+                        href="https://www.instagram.com/veza_agency?igsh=bWN6a3V3NzF0YWs2"
+                        target="_blank"
+                      >
+                        <p style="font-family: 'BPG'">veza_agency</p>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@
   <body>
     <!-- Header -->
     <div id="header" class="fixed-top">
-      <div style="margin: auto; max-width: 81%">
+      <div class="r-container">
         <div class="navbar d-xl-flex flex-xl-nowrap">
           <div class="container-fluid navbar-expand-xl">
             <div class="logo-container">
@@ -36,10 +36,13 @@
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-bars-staggered"></i>
             </button>
-            <div class="nav_mobile collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link active">მთავარი</a>
@@ -59,8 +62,10 @@
                 <li class="nav-item">
                   <a href="contact-us.html" class="nav-link">კონტაქტი</a>
                 </li>
+                <li class="nav-item">
+                  <a href="contact-us.html" class="nav-link">EN</a>
+                </li>
               </ul>
-              <a href="contact-us.html" class="nav-link">EN</a>
             </div>
           </div>
         </div>
@@ -71,20 +76,23 @@
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <div style="text-align: center">
-        <img class="landing_motion" src="image/index_gif.gif" alt="Animation" />
-      </div>
 
       <!-- Hero -->
       <div class="section bg-image-blog pb-0 px-xl-0"></div>
       <!-- End Hero -->
 
       <div class="">
-        <div class="">
+        <!-- <div style="text-align: center">
+          <img
+            src="image/index_gif.gif"
+            alt="Animation"
+            style="width: 100%; height: auto; margin: auto; display: block"
+          />
+        </div> -->
+
+        <div class="landing_main">
           <h1
-            class="landing_txt"
             style="
-              min-width: 100%;
               font-size: clamp(12px, 5vw + 10px, 86px);
               display: flex;
               flex-direction: column;
@@ -93,9 +101,9 @@
           >
             <span> BRIDGE TO YOUR </span>
             <span style="font-family: BPG; color: var(--accent-color)">
-              <img class="span_img" src="image/pink_star_big.png" alt="" />
+              <img class="span_img" src="image/pink_star.png" alt="" />
               AUDIENCE
-              <img class="span_img" src="image/pink_star_big.png" alt="" />
+              <img class="span_img" src="image/pink_star.png" alt="" />
             </span>
           </h1>
         </div>
@@ -106,86 +114,118 @@
         >
           <div
             class="marquee-container first bg-accent-color"
-            style="transform: rotate(0deg); margin-block: 1rem; z-index: 1"
+            style="transform: rotate(0deg); margin-block: 3rem; z-index: 1"
           >
             <div class="marquee-content">
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  ციფრული სტრატეგია
-                </h2>
+                <h2 style="margin-bottom: 0">ციფრული სტრატეგია</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  კონტენტ სტრატეგია
-                </h2>
+                <h2 style="margin-bottom: 0">კონტენტ სტრატეგია</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  ქოფირაითინგი
-                </h2>
+                <h2 style="margin-bottom: 0">ქოფირაითინგი</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  გრაფიკული დიზაინი
-                </h2>
+                <h2 style="margin-bottom: 0">გრაფიკული დიზაინი</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  ფოტო-ვიდეო გადაღება
-                </h2>
+                <h2 style="margin-bottom: 0">ფოტო-ვიდეო გადაღება</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  ციფრული სტრატეგია
-                </h2>
+                <h2 style="margin-bottom: 0">ციფრული სტრატეგია</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  ბრენდბუქის შექმნა
-                </h2>
+                <h2 style="margin-bottom: 0">ბრენდბუქის შექმნა</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  Email მარკეტინგი
-                </h2>
+                <h2 style="margin-bottom: 0">Email მარკეტინგი</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">
-                  ვებ-დეველოპმენტი
-                </h2>
+                <h2 style="margin-bottom: 0">ვებ-დეველოპმენტი</h2>
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <img src="image/star_logo.svg" alt="" class="img-fluid" />
+                <img
+                  src="image/star_logo.svg"
+                  style="width: 50px"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <div class="marquee-item py-2 d-flex align-items-center">
-                <h2 class="slider_txt" style="margin-bottom: 0">SEO</h2>
+                <h2 style="margin-bottom: 0">SEO</h2>
               </div>
             </div>
           </div>
@@ -193,47 +233,46 @@
       </div>
       <!-- End Hero -->
 
-      <!-- about us title -->
+      <!-- About Us -->
       <div class="section position-relative">
-        <div class="r-container d-flex flex-wrap two-col" style="gap: 80px">
-          <div class="d-flex flex-column gap-3">
-            <h3>რატომ ვეზა?</h3>
-            <div
-              style="position: relative; font-size: 22px; text-align: justify"
-            >
-              <div>
-                <p style="font-size: 20px">
-                  ვეზა ბოსნიურად კავშირს ნიშნავს და ჩვენც სწორედ ამას ვაკეთებთ -
-                  ვაშენებთ ხიდს ბრენდსა და მომხმარებელს შორის.
-                  <br />
-                  <br />
-                  ჩვენ ვართ ახალგაზრდული სააგენტო, სიღრმისეული ხედვით. ჩვენი
-                  გუნდი არ ეყრდნობა მხოლოდ ტენდენციებს, ვსწავლობთ ბრენდის
-                  ხასიათს, მიზნებსა და ემოციებს, შემდეგ კი სწორ აუდიტორიამდე
-                  მიგვაქვს მისი სათქმელი.
-                  <br />
-                  <br />
-                  ჩვენთვის ბრენდი ადამიანია - თავისი ისტორიით, რომელსაც ერთად
-                  ვწერთ.
-                  <br />
-                  <br />
-                  ვეზაში ერთდროულად აღმოაჩენ სტრატეგიასა და კრეატივს, სწორ
-                  მიზანსა და საუკეთესო საშუალებას მის მისაღწევად.
-                </p>
+        <div class="r-container">
+          <div class="d-flex flex-column gap-5">
+            <div class="d-flex flex-row align-items-center gap-2">
+              <h3 class="scrollanimation animated fadeIn adr-9">რატომ ვეზა?</h3>
+            </div>
+            <div class="row row-cols-xl-2 row-cols-1 gap-5">
+              <div class="col col-xl-7 mb-3">
+                <div class="d-flex flex-column gap-5">
+                  <div class="d-flex flex-column gap-3">
+                    <p
+                      class="scrollanimation animated fadeIn adr-9 adl-2"
+                      style="font-size: 22px; text-align: justify"
+                    >
+                      ვეზა ბოსნიურად კავშირს ნიშნავს და ჩვენც სწორედ ამას
+                      ვაკეთებთ - ვაშენებთ ხიდს ბრენდსა და მომხმარებელს შორის.
+                      <br />
+                      <br />
+                      ჩვენ ვართ ახალგაზრდული სააგენტო, სიღრმისეული ხედვით. ჩვენი
+                      გუნდი არ ეყრდნობა მხოლოდ ტენდენციებს, ვსწავლობთ ბრენდის
+                      ხასიათს, მიზნებსა და ემოციებს, შემდეგ კი სწორ აუდიტორიამდე
+                      მიგვაქვს მისი სათქმელი.
+                      <br />
+                      <br />
+                      ჩვენთვის ბრენდი ადამიანია - თავისი ისტორიით, რომელსაც
+                      ერთად ვწერთ.
+                      <br />
+                      <br />
+                      ვეზაში ერთდროულად აღმოაჩენ სტრატეგიასა და კრეატივს, სწორ
+                      მიზანსა და საუკეთესო საშუალებას მის მისაღწევად.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <img
-              style="border-radius: 20px"
-              class="w-100"
-              src="image/veza_landing.jpeg"
-              alt=""
-            />
-          </div>
         </div>
       </div>
-      <!-- end title -->
+      <!-- End About Us -->
     </main>
     <!-- End Main -->
 
